@@ -4,7 +4,7 @@ print("Do you want to greet? [Y/N]")
 respond = str(input())
 
 def greet():
-	print("WELCOME!!! " + name + " this is our app!")
+	print(f"WELCOME!!! {name} this is our app!")
 
 while respond.lower() != 'y' or respond.lower() != 'n':
 	
@@ -12,7 +12,7 @@ while respond.lower() != 'y' or respond.lower() != 'n':
 		greet()
 		break
 	elif respond.lower() == 'n':
-		print("This is our app " + name + "!!!")
+		print(f"This is our app {name}!!!")
 		break
 	else:
 		print("please try again")
